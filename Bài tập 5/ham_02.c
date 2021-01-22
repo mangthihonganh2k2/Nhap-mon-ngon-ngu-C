@@ -1,5 +1,5 @@
 #include<stdio.h>
-int kiem_tra_am_duong(int a);
+int kiem_tra_am_duong(int n);
  //khoi ham main
 int main(){
   int n;
@@ -13,7 +13,7 @@ int main(){
     printf("n = 0");
   return 0;
 }
-int kiem_tra_am_duong(int a){
+int kiem_tra_am_duong(int n){
 int kiem_tra_am_duong;
-return a;
+return n;
 }
