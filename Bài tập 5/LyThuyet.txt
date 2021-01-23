@@ -1,0 +1,42 @@
+A Bộ chữ viết trong ngôn ngữ c:
+Bộ chữ viết trong ngôn ngữ C gồm :
+26 chữ cái latinh hoa và 26 chữ cái latinh thường (  A,B,C...Z và a,b,c..z), ngoài  chữ cái latinh thì  ngôn ngữ C  có 10 chữ số thập phân (0,1,2..9), cùng các kí hiệu toán học ( “+,-,*,/,=,<,>, (,) “) và kí hiệu đặc biệt trong ngôn ngữ c :.,;” ‘_@#$!^[]{}..... cuối cùng là dấu cách hay khoảng trống, xuống hàng (\n) và tab (\t).
+
+B các kiểu dữ liệu cơ sở trong c:
+Bất cứ chương trình ứng dụng nào cần sử lý giữ liệu cũng cần có nơi để lưu trữ tạm thời dữ liệu ấy  .Nơi mà giữu liệu được lưu trữ vào bộ nhớ .
+Kiểu dữ liệu quy định kích thước bộ nhớ nơi dữ liệu được lưu trữ .
+Dữ liệu chương trình có nhiều dạng như số (number) , chuổi (sting hay text ),...
+C khái niện và cú pháp khai báo biến trong ngôn ngữ C:
++ khái niệm: một chương trình ứng dụng có thể quản lý nhiều loại dữ liệu. Trong trường hợp này, chương trình phải chỉ định bộ nhớ cho mỗi đơn ị dữ liệu. Khi chỉ định bộ nhớ, có hai điểm cần lưu ý như sau:
+•	Kích thước bộ nhớ.
+•	Vị trí bộ nhớ .
+Các ngôm ngữ lập trình hiện đại cho phép chúng ta sử dụng các tên tượng tưng gọi là biến, chỉ đến một vùng bộ nhớ nhơi mà các giá trị cụ thể được lưu trữ.
+Hệ điều hành hoạt động như một giao diện giữa các ô nhớ và lập trình viên. Lập trình không cần lưu tâm về vị trí ô nhớ mà cho hệ điều hành đảm nhiệm.
++ Biến có thể được khai báo theo cú pháp:
+ Kiểu_dữ_liệu Tên_biến;
+Trong đó : Kiểu_dữ_liệu Tên_biến la kiểu dữ liệu; tên_biến là tên biến; kết thức khai báo biến là dấu chấm phẩy.
+Ví dụ: int num;-> int là kiểu dữ liệu và num là tên biến
+D trình bày khái niệm biến toàn cục và biếm cục bộ trong ngôn ngữ c:
++ biến toàn cục (golbal variable):
+Được khai báo bên ngoài tất cả các hàm (kể cả main)
+Thường được khai báo tại khối khai báo
+Có thể được sử dụng tại mọi vị trí trong chương trình như các hàm, khối lệnh lặp for hay while.
++ biến cục bộ hay địa phương(local variable):
+Được khai báo trên các hàm hay khối lệnh (ví dụ: biến đếm lệnh lặp for)
+Chỉ có thể được sử dụng trong phạm vi hàm hay khối lệnh
+Các tham số của ham (nếu có) là các biến cục bộ của hàm đó.
+E/ Trình bày khái niệm và phân loại hàm trong ngôn ngữ C.
+Hàm Là  một khối lệnh (nhiều lệnh) thực hiện một nhiệm vụ cụ thể nào đó (tính tổng, hiện thị thông báo đến người dùng,...)
+Một cách hiểu khác về hàm: hàm là một sự chia nhỏ của chương trình
++ phân loại hàm (types of function):
+Hàm có 2 loại:
+Hàm thư viện chuẩn (Standard library funcitions):
+Là các hàm được xây dựng sẵn (bulid_in functions) trong ngôn ngữ C như hàm sacnf, printf,getchar,...
+Các hàm này được định nghĩa trong các tập tin có phần mở rộng .h như stdio.h, conio.h,.. Các tập tin này phải được gộp vào chương trình thông qua chỉ định #include
+Hàm do nguoiwd dùng ddingj nghĩa (Uer-defined funcyions): định ngĩa theo nu cầu người dùng. Các phần tiếp theo sẽ tìm hiểu vê cú pháp khai báo, định ngĩa và gọi hàm loại này.
+F/ trình bày nguyên tắc hoạt động của hàm trong ngôn ngữ C:
+	Khi máy gặp lời gọi hàm ở bất kỳ chỗ nào đó thì hàm bắt đầu được thực hiện, tức sẽ rời chỗ đó để đi đến hàm được gọi.
+	Nếu là hàm có tham số thì máy sẽ thực hiện truyền tham số thực cho các tham số hình thức tương ứng trong hàm.
+	Máy bắt đầu thực hiện lần lượt các câu lệnh trong thân hàm đến khi nào lệnh reuturn hoặc dấu } của hàm thì dừng lại thoát khỏi hàm trở về chương trình đã gọi nó và thực hiện tiếp các câu lệnh của chương trình này.
+	Nếu hàm trả về giá trị thì giá trị của biểu thức return trong hàm sẽ là giá trị của hàm.
+
